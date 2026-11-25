@@ -37,7 +37,7 @@ cmake --build build --config Release
 
 ## Podaci
 
-Baza je tekstualna datoteka `../data/flights.txt`, relativno prema direktoriju projekta. Pokretanje iz Visual Studija koristi direktorij projekta kao radni direktorij.
+Baza je tekstualna datoteka u korisničkom direktoriju podataka: na Windowsu `%LOCALAPPDATA%\FlightPlannerNatID\flights.txt`, na macOS-u `~/Library/Application Support/FlightPlannerNatID/flights.txt`, a na Linuxu `$XDG_DATA_HOME/FlightPlannerNatID/flights.txt` ili `~/.local/share/FlightPlannerNatID/flights.txt`. Aplikacija prvo traži podatke na toj novoj lokaciji, a pri učitavanju podržava i raniju putanju `../data/flights.txt`.
 
 - **Sačuvaj** prepisuje datoteku letovima koji su trenutno u aplikaciji.
 - **Učitaj** dodaje letove iz datoteke postojećim letovima u aplikaciji. Ponovljeno učitavanje iste datoteke ponovo dodaje iste letove.
@@ -55,4 +55,16 @@ Baza je tekstualna datoteka `../data/flights.txt`, relativno prema direktoriju p
 
 ## Izdanje instalacije
 
-Izlazne build datoteke i instalacijski paket ne čuvaju se u izvornom kodu. Kada se pripremi setup, preporučeno je dodati ga kao asset uz GitHub Release, uz odgovarajuću verziju aplikacije.
+Na Windowsu su potrebni Visual Studio C++ alati, CMake 3.18+, Inno Setup 6 ili 7 i natID SDK. Jednom skriptom se gradi Release aplikacija, staging direktorij i instalacijski paket:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File installer/build-setup.ps1
+```
+
+Ako SDK nije u `%USERPROFILE%\natID.SDK`, navedi njegov direktorij:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File installer/build-setup.ps1 -NatIdSdkRoot "C:/putanja/do/natID.SDK"
+```
+
+Skripta preuzima Microsoft Visual C++ x86 runtime sa zvanične Microsoft adrese i provjerava digitalni potpis prije nego što ga uključi. Staging uključuje Release DLL-ove natID/GTK, GTK runtime podatke, natID `Common` resurse, aplikacijske prevode i pokretač koji postavlja potrebne putanje. Instalacijski paket se pravi u `installer-output/FlightPlanner-Setup-0.1.0.exe`. Izlazne build datoteke i setup se ne čuvaju u izvornom kodu; setup treba dodati kao asset uz GitHub Release.

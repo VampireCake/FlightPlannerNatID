@@ -38,5 +38,55 @@ target_link_libraries(${APPFLIGHTPLANNER_NAME}
     optimized ${NATGUI_LIB_RELEASE})
 
 setTargetPropertiesForGUIApp(${APPFLIGHTPLANNER_NAME} ${APPFLIGHTPLANNER_PLIST})
-setIDEPropertiesForGUIExecutable(${APPFLIGHTPLANNER_NAME} ${CMAKE_CURRENT_LIST_DIR})
+option(FLIGHTPLANNER_SKIP_DEVRES_REGISTRATION
+    "Avoid writing project paths into the external natID SDK during packaging"
+    OFF)
+
+if (WIN32 AND FLIGHTPLANNER_SKIP_DEVRES_REGISTRATION)
+    # Keep the Visual Studio launch settings but do not let the SDK rewrite
+    # DevEnv/DevResPaths.txt inside its shared installation directory.
+    set_target_properties(${APPFLIGHTPLANNER_NAME} PROPERTIES
+        VS_DEBUGGER_COMMAND_ARGUMENTS "-devResPath=${CMAKE_CURRENT_LIST_DIR}"
+        WIN32_EXECUTABLE TRUE)
+else()
+    setIDEPropertiesForGUIExecutable(${APPFLIGHTPLANNER_NAME} ${CMAKE_CURRENT_LIST_DIR})
+endif()
 setPlatformDLLPath(${APPFLIGHTPLANNER_NAME})
+
+if (WIN32)
+    install(TARGETS ${APPFLIGHTPLANNER_NAME}
+        RUNTIME DESTINATION ".")
+
+    # Include release natID DLLs, GTK plugins/data, shared UI resources,
+    # and the Common resource tree referenced by res/DevRes.xml.
+    file(GLOB NATID_BIN_DLLS "${NATID_SDK_BIN}/*.dll")
+    foreach(NATID_BIN_DLL IN LISTS NATID_BIN_DLLS)
+        get_filename_component(NATID_BIN_DLL_NAME "${NATID_BIN_DLL}" NAME)
+        if (NOT NATID_BIN_DLL_NAME MATCHES "D\\.dll$")
+            install(FILES "${NATID_BIN_DLL}" DESTINATION ".")
+        endif()
+    endforeach()
+    install(DIRECTORY "${NATID_SDK_BIN}/GTK/"
+        DESTINATION "GTK"
+        FILES_MATCHING PATTERN "*.dll")
+    install(DIRECTORY "${NATID_SDK_BIN}/GTK/release/share/"
+        DESTINATION "GTK/release/share")
+    install(DIRECTORY "${NATID_SDK_ROOT}/Common/Regionals/"
+        DESTINATION "Common/Regionals")
+    install(FILES "${NATID_SDK_ROOT}/Common/ResConfigs/natGUI.xml"
+        DESTINATION "Common/ResConfigs")
+    install(FILES "${NATID_SDK_ROOT}/Common/Icons/defaultImg.png"
+        DESTINATION "Common/Icons")
+    install(DIRECTORY "${NATID_SDK_ROOT}/Common/Icons/Msg/"
+        DESTINATION "Common/Icons/Msg")
+    install(FILES "${NATID_SDK_ROOT}/Common/Symbols/PSA/pointer.xml"
+        DESTINATION "Common/Symbols/PSA")
+    install(FILES "${NATID_SDK_ROOT}/Common/Symbols/Shapes/defaultSymbol.xml"
+        DESTINATION "Common/Symbols/Shapes")
+    install(FILES "${NATID_SDK_ROOT}/Common/Sounds/Click.wav"
+        DESTINATION "Common/Sounds")
+    install(DIRECTORY "${SOURCE_ROOT}/res/"
+        DESTINATION "res")
+    install(FILES "${SOURCE_ROOT}/installer/FlightPlannerNatID.vbs"
+        DESTINATION ".")
+endif()

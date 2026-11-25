@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <cctype>
 #include <cmath>
+#include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <iomanip>
@@ -13,7 +14,26 @@
 
 namespace
 {
-    constexpr char FlightDataFilePath[] = "../data/flights.txt";
+    constexpr char LegacyFlightDataFilePath[] = "../data/flights.txt";
+
+    std::filesystem::path getFlightDataFilePath()
+    {
+#if defined(_WIN32)
+        if (const char* appData = std::getenv("LOCALAPPDATA"); appData && *appData)
+            return std::filesystem::path(appData) / "FlightPlannerNatID" / "flights.txt";
+#elif defined(__APPLE__)
+        if (const char* home = std::getenv("HOME"); home && *home)
+            return std::filesystem::path(home) / "Library" / "Application Support" /
+                   "FlightPlannerNatID" / "flights.txt";
+#else
+        if (const char* xdgData = std::getenv("XDG_DATA_HOME"); xdgData && *xdgData)
+            return std::filesystem::path(xdgData) / "FlightPlannerNatID" / "flights.txt";
+        if (const char* home = std::getenv("HOME"); home && *home)
+            return std::filesystem::path(home) / ".local" / "share" /
+                   "FlightPlannerNatID" / "flights.txt";
+#endif
+        return std::filesystem::path(LegacyFlightDataFilePath);
+    }
 
     std::string asStdString(const td::String& value)
     {
@@ -382,7 +402,7 @@ void FlightEntryPage::removeSelectedFlight()
 
 void FlightEntryPage::saveFlights()
 {
-    const std::filesystem::path filePath(FlightDataFilePath);
+    const std::filesystem::path filePath = getFlightDataFilePath();
     std::error_code fileError;
     std::filesystem::create_directories(filePath.parent_path(), fileError);
     if (fileError)
@@ -417,7 +437,17 @@ void FlightEntryPage::saveFlights()
 
 void FlightEntryPage::loadFlights()
 {
-    std::ifstream input(FlightDataFilePath, std::ios::in | std::ios::binary);
+    std::filesystem::path filePath = getFlightDataFilePath();
+    std::error_code pathError;
+    if (!std::filesystem::exists(filePath, pathError) && !pathError)
+    {
+        const std::filesystem::path legacyPath(LegacyFlightDataFilePath);
+        std::error_code legacyError;
+        if (std::filesystem::exists(legacyPath, legacyError) && !legacyError)
+            filePath = legacyPath;
+    }
+
+    std::ifstream input(filePath, std::ios::in | std::ios::binary);
     if (!input)
     {
         _status.setTitle(tr("statusLoadFailed"));
