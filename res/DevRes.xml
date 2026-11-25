@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevRes regionals="Common/Regionals">
+    <Langs>
+        <Lang id="en" name="English"/>
+        <Lang id="ba" name="Bosanski"/>
+        <Lang id="se" name="Svenska"/>
+        <Lang id="fr" name="Français"/>
+        <Lang id="lv" name="Latviešu"/>
+    </Langs>
+    <ArtWork>
+        <Config path="Common/ResConfigs/natGUI.xml"/>
+        <Config path=":main.xml"/>
+    </ArtWork>
+    <Translation>
+        <Config path=":tr/%s/natGUI.xml"/>
+        <Config path=":tr/%s/main.xml"/>
+    </Translation>
+</DevRes>

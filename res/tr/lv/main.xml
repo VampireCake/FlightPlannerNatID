@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevRes>
+    <Translations>
+        <Res id="menuFlights" tr="Lidojumi"/>
+        <Res id="menuCalendar" tr="Kalendārs"/>
+        <Res id="menuMap" tr="Karte"/>
+        <Res id="menuExport" tr="Eksports"/>
+        <Res id="menuTrips" tr="Ceļojumi"/>
+        <Res id="menuLanguage" tr="Valoda"/>
+        <Res id="menuSettings" tr="Iestatījumi"/>
+        <Res id="menuHelp" tr="Palīdzība"/>
+        <Res id="menuDefaultRanking" tr="Noklusētā kārtošana"/>
+        <Res id="menuDefaultSortCost" tr="Noklusētā kārtošana: zemākā kopējā cena"/>
+        <Res id="menuDefaultSortLongest" tr="Noklusētā kārtošana: ilgākā uzturēšanās"/>
+        <Res id="menuDefaultSortShortest" tr="Noklusētā kārtošana: īsākā uzturēšanās"/>
+        <Res id="menuQuickGuide" tr="Īsā pamācība"/>
+        <Res id="menuAbout" tr="Par Flight Planner"/>
+        <Res id="aboutTitle" tr="Par Flight Planner"/>
+        <Res id="aboutMessage" tr="Flight Planner NatID. Versija 0.1.0. Ievadiet lidojumus un salīdziniet iespējamos turp un atpakaļ ceļojumus."/>
+        <Res id="quickGuideTitle" tr="Īsā pamācība"/>
+        <Res id="quickGuideMessage" tr="Cilnē Pārvaldīt lidojumus var pievienot, apskatīt vai noņemt lidojumus. Cilnē Meklēt ceļojumus iestatiet filtrus un sakārtojiet iespējamos ceļojumus. Izvēlne Lidojumi ļauj saglabāt vai ielādēt lidojumu sarakstu."/>
+        <Res id="menuLoadFlights" tr="Ielādēt lidojumus"/>
+        <Res id="menuSaveFlights" tr="Saglabāt lidojumus"/>
+        <Res id="menuCalendarOpen" tr="Atvērt kalendāru (drīzumā)"/>
+        <Res id="menuMapOpen" tr="Rādīt karti (drīzumā)"/>
+        <Res id="menuExportCsv" tr="Eksportēt CSV (drīzumā)"/>
+        <Res id="menuExportPdf" tr="Eksportēt PDF (drīzumā)"/>
+        <Res id="menuAllTrips" tr="Visi ceļojumi"/>
+        <Res id="menuSavedTrips" tr="Saglabātie ceļojumi (drīzumā)"/>
+        <Res id="menuFavoriteTrips" tr="Izlase (drīzumā)"/>
+        <Res id="manageFlightsView" tr="Pārvaldīt lidojumus"/>
+        <Res id="findTripsView" tr="Meklēt ceļojumus"/>
+        <Res id="appTitle" tr="Ceļojumu plānotājs"/>
+        <Res id="newFlight" tr="Ievadīt jaunu lidojumu"/>
+        <Res id="flightType" tr="Lidojuma veids"/>
+        <Res id="departure" tr="Izlidošana"/>
+        <Res id="return" tr="Atgriešanās"/>
+        <Res id="flightDate" tr="Datums (dd.mm.gggg)"/>
+        <Res id="departureLocation" tr="Izlidošanas vieta"/>
+        <Res id="arrivalLocation" tr="Ielidošanas vieta"/>
+        <Res id="ticketPrice" tr="Biļetes cena (EUR)"/>
+        <Res id="extraCost" tr="Papildu maksa EUR (0, ja nav)"/>
+        <Res id="addFlight" tr="+ Pievienot lidojumu"/>
+        <Res id="showFlights" tr="Rādīt lidojumus"/>
+        <Res id="removeSelectedFlight" tr="Noņemt izvēlēto lidojumu"/>
+        <Res id="flightToRemoveLabel" tr="Noņemamais lidojums"/>
+        <Res id="selectFlightPlaceholder" tr="Izvēlieties lidojumu..."/>
+        <Res id="selectFlightToRemove" tr="Vispirms izvēlieties lidojumu nolaižamajā sarakstā."/>
+        <Res id="statusFlightRemoved" tr="Lidojums noņemts."/>
+        <Res id="enteredFlights" tr="Ievadītie lidojumi"/>
+        <Res id="filtersRanking" tr="Filtri un ceļojumu ranžēšana"/>
+        <Res id="meetingCity" tr="Tikšanās pilsēta (tukšs = visas)"/>
+        <Res id="earliestDeparture" tr="Agrākais izlidošanas datums"/>
+        <Res id="latestReturn" tr="Vēlākais atgriešanās datums"/>
+        <Res id="minimumNights" tr="Minimālais nakšu skaits"/>
+        <Res id="maximumNights" tr="Maksimālais nakšu skaits"/>
+        <Res id="maximumBudget" tr="Budžets EUR (0 = bez limita)"/>
+        <Res id="sortBy" tr="Kārtot pēc"/>
+        <Res id="rankTrips" tr="Sakārtot ceļojumus"/>
+        <Res id="possibleTrips" tr="Iespējamie ceļojumi (līdz 12 vienā lapā)"/>
+        <Res id="previous" tr="Iepriekšējā"/>
+        <Res id="next" tr="Nākamā"/>
+        <Res id="lowestTotalCost" tr="Zemākās izmaksas"/>
+        <Res id="longestStay" tr="Ilgākā uzturēšanās"/>
+        <Res id="shortestStay" tr="Īsākā uzturēšanās"/>
+        <Res id="initialFlightList" tr="Ievadītie lidojumi tiks parādīti pēc pogas 'Rādīt lidojumus' nospiešanas."/>
+        <Res id="initialResults" tr="Ievadi filtrus un nospied 'Sakārtot ceļojumus'."/>
+        <Res id="validationLocations" tr="Ievadi izlidošanas un ielidošanas vietas."/>
+        <Res id="validationDate" tr="Ievadi derīgu datumu formātā dd.mm.gggg."/>
+        <Res id="validationFare" tr="Biļetes cenai jābūt lielākai par nulli."/>
+        <Res id="validationExtraCost" tr="Papildu izmaksas nedrīkst būt negatīvas."/>
+        <Res id="statusFlightAdded" tr="Lidojums pievienots. Nospied 'Rādīt lidojumus', lai parādītu sarakstu."/>
+        <Res id="noFlights" tr="Lidojumi vēl nav ievadīti."/>
+        <Res id="departureUpper" tr="IZLIDOŠANA"/>
+        <Res id="returnUpper" tr="ATGRIEŠANĀS"/>
+        <Res id="ticketShort" tr="biļete"/>
+        <Res id="additionalShort" tr="papildu"/>
+        <Res id="noAdditionalCost" tr="bez papildu izmaksām"/>
+        <Res id="nightsUnit" tr="naktis"/>
+        <Res id="totalShort" tr="kopā"/>
+        <Res id="ticketsShort" tr="biļetes"/>
+        <Res id="extraCostsShort" tr="papildu maksas"/>
+        <Res id="combinationsUnit" tr="kombinācijas"/>
+        <Res id="noMatchingTrips" tr="Neviena kombinācija neatbilst filtriem. Pārbaudi, vai katra izlidošana un atgriešanās izmanto to pašu tikšanās pilsētu."/>
+        <Res id="statusNoTrips" tr="Neviena atbilstoša ceļojuma kombinācija netika atrasta."/>
+        <Res id="validationNightRange" tr="Minimālais nakšu skaits nedrīkst pārsniegt maksimālo."/>
+        <Res id="validationDateRange" tr="Vēlākais datums nedrīkst būt pirms agrākā izlidošanas datuma."/>
+        <Res id="foundCombinations" tr="Atrasto kombināciju skaits: "/>
+        <Res id="totalIncludesAdditionalFees" tr="Kopējās izmaksās ir iekļautas papildu maksas."/>
+        <Res id="languageChanged" tr="Valoda ir mainīta."/>
+        <Res id="statusFlightsSaved" tr="Lidojumi saglabāti failā."/>
+        <Res id="statusFlightsLoaded" tr="Lidojumi ielādēti no faila."/>
+        <Res id="statusSaveFailed" tr="Neizdevās saglabāt lidojumus failā."/>
+        <Res id="statusLoadFailed" tr="Neizdevās ielādēt lidojumus. Pārbaudiet faila formātu."/>
+    </Translations>
+</DevRes>

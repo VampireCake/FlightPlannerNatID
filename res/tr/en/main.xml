@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevRes>
+    <Translations>
+        <Res id="menuFlights" tr="Flights"/>
+        <Res id="menuCalendar" tr="Calendar"/>
+        <Res id="menuMap" tr="Map"/>
+        <Res id="menuExport" tr="Export"/>
+        <Res id="menuTrips" tr="Trips"/>
+        <Res id="menuLanguage" tr="Language"/>
+        <Res id="menuSettings" tr="Settings"/>
+        <Res id="menuHelp" tr="Help"/>
+        <Res id="menuDefaultRanking" tr="Default ranking"/>
+        <Res id="menuDefaultSortCost" tr="Default ranking: Lowest total cost"/>
+        <Res id="menuDefaultSortLongest" tr="Default ranking: Longest stay"/>
+        <Res id="menuDefaultSortShortest" tr="Default ranking: Shortest stay"/>
+        <Res id="menuQuickGuide" tr="Quick guide"/>
+        <Res id="menuAbout" tr="About Flight Planner"/>
+        <Res id="aboutTitle" tr="About Flight Planner"/>
+        <Res id="aboutMessage" tr="Flight Planner NatID. Version 0.1.0. Enter flights and compare possible return trips."/>
+        <Res id="quickGuideTitle" tr="Quick guide"/>
+        <Res id="quickGuideMessage" tr="Use Manage flights to add, review, or remove flights. Use Find trips to set filters and rank possible trips. The Flights menu saves or loads your flight list."/>
+        <Res id="menuLoadFlights" tr="Load flights"/>
+        <Res id="menuSaveFlights" tr="Save flights"/>
+        <Res id="menuCalendarOpen" tr="Open calendar (soon)"/>
+        <Res id="menuMapOpen" tr="Show map (soon)"/>
+        <Res id="menuExportCsv" tr="Export CSV (soon)"/>
+        <Res id="menuExportPdf" tr="Export PDF (soon)"/>
+        <Res id="menuAllTrips" tr="All trips"/>
+        <Res id="menuSavedTrips" tr="Saved trips (soon)"/>
+        <Res id="menuFavoriteTrips" tr="Favorites (soon)"/>
+        <Res id="manageFlightsView" tr="Manage flights"/>
+        <Res id="findTripsView" tr="Find trips"/>
+        <Res id="appTitle" tr="Flight Planner"/>
+        <Res id="newFlight" tr="Enter a new flight"/>
+        <Res id="flightType" tr="Flight type"/>
+        <Res id="departure" tr="Departure"/>
+        <Res id="return" tr="Return"/>
+        <Res id="flightDate" tr="Date (dd.mm.yyyy)"/>
+        <Res id="departureLocation" tr="Departure location"/>
+        <Res id="arrivalLocation" tr="Arrival location"/>
+        <Res id="ticketPrice" tr="Ticket price (EUR)"/>
+        <Res id="extraCost" tr="Extra cost in EUR (0 if none)"/>
+        <Res id="addFlight" tr="+ Add flight"/>
+        <Res id="showFlights" tr="Show flights"/>
+        <Res id="removeSelectedFlight" tr="Remove selected flight"/>
+        <Res id="flightToRemoveLabel" tr="Flight to remove"/>
+        <Res id="selectFlightPlaceholder" tr="Select a flight..."/>
+        <Res id="selectFlightToRemove" tr="Choose a flight above before removing it."/>
+        <Res id="statusFlightRemoved" tr="Flight removed."/>
+        <Res id="statusFlightsSaved" tr="Flights saved to file."/>
+        <Res id="statusFlightsLoaded" tr="Flights loaded from file."/>
+        <Res id="statusSaveFailed" tr="Could not save flights to file."/>
+        <Res id="statusLoadFailed" tr="Could not load flights. Check the data file format."/>
+        <Res id="enteredFlights" tr="Entered flights"/>
+        <Res id="filtersRanking" tr="Filters and trip ranking"/>
+        <Res id="meetingCity" tr="Meeting city (blank = all)"/>
+        <Res id="earliestDeparture" tr="Earliest departure"/>
+        <Res id="latestReturn" tr="Latest return"/>
+        <Res id="minimumNights" tr="Minimum nights"/>
+        <Res id="maximumNights" tr="Maximum nights"/>
+        <Res id="maximumBudget" tr="Maximum total EUR (0 = no limit)"/>
+        <Res id="sortBy" tr="Sort by"/>
+        <Res id="rankTrips" tr="Rank trips"/>
+        <Res id="possibleTrips" tr="Possible trips (up to 12 per page)"/>
+        <Res id="previous" tr="Previous"/>
+        <Res id="next" tr="Next"/>
+        <Res id="lowestTotalCost" tr="Lowest total cost"/>
+        <Res id="longestStay" tr="Longest stay"/>
+        <Res id="shortestStay" tr="Shortest stay"/>
+        <Res id="initialFlightList" tr="Entered flights appear after you click 'Show flights'."/>
+        <Res id="initialResults" tr="Enter filters and click 'Rank trips'."/>
+        <Res id="validationLocations" tr="Enter both departure and arrival locations."/>
+        <Res id="validationDate" tr="Enter a valid date in dd.mm.yyyy format."/>
+        <Res id="validationFare" tr="Ticket price must be greater than zero."/>
+        <Res id="validationExtraCost" tr="Extra cost cannot be negative."/>
+        <Res id="statusFlightAdded" tr="Flight added. Click 'Show flights' to display the list."/>
+        <Res id="noFlights" tr="No flights have been entered yet."/>
+        <Res id="departureUpper" tr="DEPARTURE"/>
+        <Res id="returnUpper" tr="RETURN"/>
+        <Res id="ticketShort" tr="ticket"/>
+        <Res id="additionalShort" tr="extra"/>
+        <Res id="noAdditionalCost" tr="no extra cost"/>
+        <Res id="nightsUnit" tr="nights"/>
+        <Res id="totalShort" tr="total"/>
+        <Res id="ticketsShort" tr="tickets"/>
+        <Res id="extraCostsShort" tr="extras"/>
+        <Res id="combinationsUnit" tr="combinations"/>
+        <Res id="noMatchingTrips" tr="No trips match the filters. Check that each departure and return use the same meeting city."/>
+        <Res id="statusNoTrips" tr="No matching trip combinations were found."/>
+        <Res id="validationNightRange" tr="Minimum nights cannot be greater than maximum nights."/>
+        <Res id="validationDateRange" tr="The latest date cannot be earlier than the earliest departure."/>
+        <Res id="foundCombinations" tr="Matching combinations found: "/>
+        <Res id="totalIncludesAdditionalFees" tr="Total cost includes additional fees."/>
+        <Res id="languageChanged" tr="Language changed."/>
+    </Translations>
+</DevRes>

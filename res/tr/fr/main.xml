@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevRes>
+    <Translations>
+        <Res id="menuFlights" tr="Vols"/>
+        <Res id="menuCalendar" tr="Calendrier"/>
+        <Res id="menuMap" tr="Carte"/>
+        <Res id="menuExport" tr="Exporter"/>
+        <Res id="menuTrips" tr="Voyages"/>
+        <Res id="menuLanguage" tr="Langue"/>
+        <Res id="menuSettings" tr="Paramètres"/>
+        <Res id="menuHelp" tr="Aide"/>
+        <Res id="menuDefaultRanking" tr="Classement par défaut"/>
+        <Res id="menuDefaultSortCost" tr="Tri par défaut : coût total le plus bas"/>
+        <Res id="menuDefaultSortLongest" tr="Tri par défaut : séjour le plus long"/>
+        <Res id="menuDefaultSortShortest" tr="Tri par défaut : séjour le plus court"/>
+        <Res id="menuQuickGuide" tr="Guide rapide"/>
+        <Res id="menuAbout" tr="À propos de Flight Planner"/>
+        <Res id="aboutTitle" tr="À propos de Flight Planner"/>
+        <Res id="aboutMessage" tr="Flight Planner NatID. Version 0.1.0. Saisissez des vols et comparez les trajets aller-retour possibles."/>
+        <Res id="quickGuideTitle" tr="Guide rapide"/>
+        <Res id="quickGuideMessage" tr="Utilisez Gérer les vols pour ajouter, consulter ou supprimer des vols. Utilisez Trouver des voyages pour définir les filtres et classer les trajets possibles. Le menu Vols permet d'enregistrer ou de charger la liste."/>
+        <Res id="menuLoadFlights" tr="Charger les vols"/>
+        <Res id="menuSaveFlights" tr="Enregistrer les vols"/>
+        <Res id="menuCalendarOpen" tr="Ouvrir le calendrier (bientôt)"/>
+        <Res id="menuMapOpen" tr="Afficher la carte (bientôt)"/>
+        <Res id="menuExportCsv" tr="Exporter CSV (bientôt)"/>
+        <Res id="menuExportPdf" tr="Exporter PDF (bientôt)"/>
+        <Res id="menuAllTrips" tr="Tous les voyages"/>
+        <Res id="menuSavedTrips" tr="Voyages enregistrés (bientôt)"/>
+        <Res id="menuFavoriteTrips" tr="Favoris (bientôt)"/>
+        <Res id="manageFlightsView" tr="Gérer les vols"/>
+        <Res id="findTripsView" tr="Trouver des voyages"/>
+        <Res id="appTitle" tr="Planificateur de voyages"/>
+        <Res id="newFlight" tr="Saisir un nouveau vol"/>
+        <Res id="flightType" tr="Type de vol"/>
+        <Res id="departure" tr="Aller"/>
+        <Res id="return" tr="Retour"/>
+        <Res id="flightDate" tr="Date (jj.mm.aaaa)"/>
+        <Res id="departureLocation" tr="Lieu de départ"/>
+        <Res id="arrivalLocation" tr="Lieu d’arrivée"/>
+        <Res id="ticketPrice" tr="Prix du billet (EUR)"/>
+        <Res id="extraCost" tr="Frais supplémentaires en EUR (0 si aucun)"/>
+        <Res id="addFlight" tr="+ Ajouter un vol"/>
+        <Res id="showFlights" tr="Afficher les vols"/>
+        <Res id="removeSelectedFlight" tr="Supprimer le vol sélectionné"/>
+        <Res id="flightToRemoveLabel" tr="Vol à supprimer"/>
+        <Res id="selectFlightPlaceholder" tr="Sélectionnez un vol..."/>
+        <Res id="selectFlightToRemove" tr="Choisissez d’abord un vol dans la liste déroulante."/>
+        <Res id="statusFlightRemoved" tr="Vol supprimé."/>
+        <Res id="enteredFlights" tr="Vols saisis"/>
+        <Res id="filtersRanking" tr="Filtres et classement des voyages"/>
+        <Res id="meetingCity" tr="Ville de rencontre (vide = toutes)"/>
+        <Res id="earliestDeparture" tr="Départ le plus tôt"/>
+        <Res id="latestReturn" tr="Retour au plus tard"/>
+        <Res id="minimumNights" tr="Nombre minimal de nuits"/>
+        <Res id="maximumNights" tr="Nombre maximal de nuits"/>
+        <Res id="maximumBudget" tr="Budget EUR (0 = illimité)"/>
+        <Res id="sortBy" tr="Classer par"/>
+        <Res id="rankTrips" tr="Classer les voyages"/>
+        <Res id="possibleTrips" tr="Combinaisons possibles (12 maximum par page)"/>
+        <Res id="previous" tr="Précédent"/>
+        <Res id="next" tr="Suivant"/>
+        <Res id="lowestTotalCost" tr="Coût total minimum"/>
+        <Res id="longestStay" tr="Séjour le plus long"/>
+        <Res id="shortestStay" tr="Séjour le plus court"/>
+        <Res id="initialFlightList" tr="Les vols saisis apparaîtront après avoir cliqué sur 'Afficher les vols'."/>
+        <Res id="initialResults" tr="Saisissez les filtres, puis cliquez sur 'Classer les voyages'."/>
+        <Res id="validationLocations" tr="Saisissez les lieux de départ et d’arrivée."/>
+        <Res id="validationDate" tr="Saisissez une date valide au format jj.mm.aaaa."/>
+        <Res id="validationFare" tr="Le prix du billet doit être supérieur à zéro."/>
+        <Res id="validationExtraCost" tr="Les frais supplémentaires ne peuvent pas être négatifs."/>
+        <Res id="statusFlightAdded" tr="Vol ajouté. Cliquez sur 'Afficher les vols' pour voir la liste."/>
+        <Res id="noFlights" tr="Aucun vol n’a encore été saisi."/>
+        <Res id="departureUpper" tr="ALLER"/>
+        <Res id="returnUpper" tr="RETOUR"/>
+        <Res id="ticketShort" tr="billet"/>
+        <Res id="additionalShort" tr="supplément"/>
+        <Res id="noAdditionalCost" tr="aucun frais supplémentaire"/>
+        <Res id="nightsUnit" tr="nuits"/>
+        <Res id="totalShort" tr="au total"/>
+        <Res id="ticketsShort" tr="billets"/>
+        <Res id="extraCostsShort" tr="suppléments"/>
+        <Res id="combinationsUnit" tr="combinaisons"/>
+        <Res id="noMatchingTrips" tr="Aucun voyage ne correspond aux filtres. Vérifiez que chaque aller et retour utilise la même ville de correspondance."/>
+        <Res id="statusNoTrips" tr="Aucune combinaison de voyage correspondante n’a été trouvée."/>
+        <Res id="validationNightRange" tr="Le nombre minimal de nuits ne peut pas dépasser le nombre maximal."/>
+        <Res id="validationDateRange" tr="La date de retour ne peut pas être antérieure au départ le plus tôt."/>
+        <Res id="foundCombinations" tr="Combinaisons correspondantes trouvées : "/>
+        <Res id="totalIncludesAdditionalFees" tr="Le coût total inclut les frais supplémentaires."/>
+        <Res id="languageChanged" tr="La langue a changé."/>
+        <Res id="statusFlightsSaved" tr="Vols enregistrés dans le fichier."/>
+        <Res id="statusFlightsLoaded" tr="Vols chargés depuis le fichier."/>
+        <Res id="statusSaveFailed" tr="Impossible d’enregistrer les vols dans le fichier."/>
+        <Res id="statusLoadFailed" tr="Impossible de charger les vols. Vérifiez le format du fichier."/>
+    </Translations>
+</DevRes>

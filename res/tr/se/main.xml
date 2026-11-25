@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevRes>
+    <Translations>
+        <Res id="menuFlights" tr="Flyg"/>
+        <Res id="menuCalendar" tr="Kalender"/>
+        <Res id="menuMap" tr="Karta"/>
+        <Res id="menuExport" tr="Exportera"/>
+        <Res id="menuTrips" tr="Resor"/>
+        <Res id="menuLanguage" tr="Språk"/>
+        <Res id="menuSettings" tr="Inställningar"/>
+        <Res id="menuHelp" tr="Hjälp"/>
+        <Res id="menuDefaultRanking" tr="Standardordning"/>
+        <Res id="menuDefaultSortCost" tr="Standardordning: lägsta totalkostnad"/>
+        <Res id="menuDefaultSortLongest" tr="Standardordning: längst vistelse"/>
+        <Res id="menuDefaultSortShortest" tr="Standardordning: kortast vistelse"/>
+        <Res id="menuQuickGuide" tr="Snabbguide"/>
+        <Res id="menuAbout" tr="Om Flight Planner"/>
+        <Res id="aboutTitle" tr="Om Flight Planner"/>
+        <Res id="aboutMessage" tr="Flight Planner NatID. Version 0.1.0. Lägg till flyg och jämför möjliga tur- och returresor."/>
+        <Res id="quickGuideTitle" tr="Snabbguide"/>
+        <Res id="quickGuideMessage" tr="Använd Hantera flyg för att lägga till, visa eller ta bort flyg. Använd Hitta resor för att ställa in filter och rangordna möjliga resor. Menyn Flyg används för att spara eller läsa in flyglistan."/>
+        <Res id="menuLoadFlights" tr="Läs in flygningar"/>
+        <Res id="menuSaveFlights" tr="Spara flygningar"/>
+        <Res id="menuCalendarOpen" tr="Öppna kalender (snart)"/>
+        <Res id="menuMapOpen" tr="Visa karta (snart)"/>
+        <Res id="menuExportCsv" tr="Exportera CSV (snart)"/>
+        <Res id="menuExportPdf" tr="Exportera PDF (snart)"/>
+        <Res id="menuAllTrips" tr="Alla resor"/>
+        <Res id="menuSavedTrips" tr="Sparade resor (snart)"/>
+        <Res id="menuFavoriteTrips" tr="Favoriter (snart)"/>
+        <Res id="manageFlightsView" tr="Hantera flyg"/>
+        <Res id="findTripsView" tr="Hitta resor"/>
+        <Res id="appTitle" tr="Reseplanerare"/>
+        <Res id="newFlight" tr="Lägg till en ny flygning"/>
+        <Res id="flightType" tr="Typ av flygning"/>
+        <Res id="departure" tr="Utresa"/>
+        <Res id="return" tr="Hemresa"/>
+        <Res id="flightDate" tr="Datum (dd.mm.yyyy)"/>
+        <Res id="departureLocation" tr="Avreseort"/>
+        <Res id="arrivalLocation" tr="Ankomstort"/>
+        <Res id="ticketPrice" tr="Biljettpris (EUR)"/>
+        <Res id="extraCost" tr="Tillägg i EUR (0 om inga)"/>
+        <Res id="addFlight" tr="+ Lägg till flygning"/>
+        <Res id="showFlights" tr="Visa flygningar"/>
+        <Res id="removeSelectedFlight" tr="Ta bort vald flygning"/>
+        <Res id="flightToRemoveLabel" tr="Flygning att ta bort"/>
+        <Res id="selectFlightPlaceholder" tr="Välj en flygning..."/>
+        <Res id="selectFlightToRemove" tr="Välj först en flygning i rullgardinslistan."/>
+        <Res id="statusFlightRemoved" tr="Flygningen har tagits bort."/>
+        <Res id="enteredFlights" tr="Registrerade flygningar"/>
+        <Res id="filtersRanking" tr="Filter och rangordning av resor"/>
+        <Res id="meetingCity" tr="Mötesstad (tomt = alla)"/>
+        <Res id="earliestDeparture" tr="Tidigaste avresa"/>
+        <Res id="latestReturn" tr="Senaste hemresa"/>
+        <Res id="minimumNights" tr="Minsta antal nätter"/>
+        <Res id="maximumNights" tr="Största antal nätter"/>
+        <Res id="maximumBudget" tr="Budget EUR (0 = ingen gräns)"/>
+        <Res id="sortBy" tr="Sortera efter"/>
+        <Res id="rankTrips" tr="Rangordna resor"/>
+        <Res id="possibleTrips" tr="Möjliga resor (högst 12 per sida)"/>
+        <Res id="previous" tr="Föregående"/>
+        <Res id="next" tr="Nästa"/>
+        <Res id="lowestTotalCost" tr="Lägsta totalkostnad"/>
+        <Res id="longestStay" tr="Längsta vistelse"/>
+        <Res id="shortestStay" tr="Kortaste vistelse"/>
+        <Res id="initialFlightList" tr="Registrerade flygningar visas när du klickar på 'Visa flygningar'."/>
+        <Res id="initialResults" tr="Ange filter och klicka på 'Rangordna resor'."/>
+        <Res id="validationLocations" tr="Ange både avreseort och ankomstort."/>
+        <Res id="validationDate" tr="Ange ett giltigt datum i formatet dd.mm.yyyy."/>
+        <Res id="validationFare" tr="Biljettpriset måste vara större än noll."/>
+        <Res id="validationExtraCost" tr="Tilläggskostnaden får inte vara negativ."/>
+        <Res id="statusFlightAdded" tr="Flygningen har lagts till. Klicka på 'Visa flygningar' för att visa listan."/>
+        <Res id="noFlights" tr="Inga flygningar har lagts till ännu."/>
+        <Res id="departureUpper" tr="UTRESA"/>
+        <Res id="returnUpper" tr="HEMRESA"/>
+        <Res id="ticketShort" tr="biljett"/>
+        <Res id="additionalShort" tr="extra"/>
+        <Res id="noAdditionalCost" tr="ingen extra kostnad"/>
+        <Res id="nightsUnit" tr="nätter"/>
+        <Res id="totalShort" tr="totalt"/>
+        <Res id="ticketsShort" tr="biljetter"/>
+        <Res id="extraCostsShort" tr="tillägg"/>
+        <Res id="combinationsUnit" tr="kombinationer"/>
+        <Res id="noMatchingTrips" tr="Inga resor matchar filtren. Kontrollera att varje utresa och hemresa använder samma mötesstad."/>
+        <Res id="statusNoTrips" tr="Inga matchande resekombinationer hittades."/>
+        <Res id="validationNightRange" tr="Minsta antal nätter får inte vara större än det största antalet."/>
+        <Res id="validationDateRange" tr="Det senaste datumet får inte infalla före den tidigaste avresan."/>
+        <Res id="foundCombinations" tr="Matchande kombinationer: "/>
+        <Res id="totalIncludesAdditionalFees" tr="Totalsumman inkluderar extra avgifter."/>
+        <Res id="languageChanged" tr="Språket har ändrats."/>
+        <Res id="statusFlightsSaved" tr="Flygningarna har sparats i filen."/>
+        <Res id="statusFlightsLoaded" tr="Flygningarna har lästs in från filen."/>
+        <Res id="statusSaveFailed" tr="Det gick inte att spara flygningarna i filen."/>
+        <Res id="statusLoadFailed" tr="Det gick inte att läsa in flygningarna. Kontrollera filformatet."/>
+    </Translations>
+</DevRes>

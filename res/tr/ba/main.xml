@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevRes>
+    <Translations>
+        <Res id="menuFlights" tr="Letovi"/>
+        <Res id="menuCalendar" tr="Kalendar"/>
+        <Res id="menuMap" tr="Mapa"/>
+        <Res id="menuExport" tr="Izvoz"/>
+        <Res id="menuTrips" tr="Putovanja"/>
+        <Res id="menuLanguage" tr="Jezik"/>
+        <Res id="menuSettings" tr="Postavke"/>
+        <Res id="menuHelp" tr="Pomoć"/>
+        <Res id="menuDefaultRanking" tr="Zadano rangiranje"/>
+        <Res id="menuDefaultSortCost" tr="Zadano rangiranje: najniža ukupna cijena"/>
+        <Res id="menuDefaultSortLongest" tr="Zadano rangiranje: najduži boravak"/>
+        <Res id="menuDefaultSortShortest" tr="Zadano rangiranje: najkraći boravak"/>
+        <Res id="menuQuickGuide" tr="Kratko uputstvo"/>
+        <Res id="menuAbout" tr="O Planeru putovanja"/>
+        <Res id="aboutTitle" tr="O Planeru putovanja"/>
+        <Res id="aboutMessage" tr="Flight Planner NatID. Verzija 0.1.0. Unesite letove i uporedite moguća povratna putovanja."/>
+        <Res id="quickGuideTitle" tr="Kratko uputstvo"/>
+        <Res id="quickGuideMessage" tr="U kartici Upravljanje letovima možete dodati, pregledati ili ukloniti letove. U kartici Traženje putovanja postavite filtere i rangirajte moguća putovanja. Meni Letovi služi za čuvanje i učitavanje liste letova."/>
+        <Res id="menuLoadFlights" tr="Učitaj letove"/>
+        <Res id="menuSaveFlights" tr="Sačuvaj letove"/>
+        <Res id="menuCalendarOpen" tr="Otvori kalendar (uskoro)"/>
+        <Res id="menuMapOpen" tr="Prikaži mapu (uskoro)"/>
+        <Res id="menuExportCsv" tr="Izvoz CSV (uskoro)"/>
+        <Res id="menuExportPdf" tr="Izvoz PDF (uskoro)"/>
+        <Res id="menuAllTrips" tr="Sva putovanja"/>
+        <Res id="menuSavedTrips" tr="Sačuvana putovanja (uskoro)"/>
+        <Res id="menuFavoriteTrips" tr="Omiljena putovanja (uskoro)"/>
+        <Res id="manageFlightsView" tr="Upravljanje letovima"/>
+        <Res id="findTripsView" tr="Traženje putovanja"/>
+        <Res id="appTitle" tr="Planer putovanja"/>
+        <Res id="newFlight" tr="Unos novog leta"/>
+        <Res id="flightType" tr="Vrsta leta"/>
+        <Res id="departure" tr="Polazak"/>
+        <Res id="return" tr="Povratak"/>
+        <Res id="flightDate" tr="Datum (dd.mm.gggg)"/>
+        <Res id="departureLocation" tr="Lokacija polijetanja"/>
+        <Res id="arrivalLocation" tr="Lokacija slijetanja"/>
+        <Res id="ticketPrice" tr="Cijena karte (EUR)"/>
+        <Res id="extraCost" tr="Dodatni trošak u EUR (0 ako ga nema)"/>
+        <Res id="addFlight" tr="+ Dodaj let"/>
+        <Res id="showFlights" tr="Pregled unosa"/>
+        <Res id="removeSelectedFlight" tr="Ukloni izabrani let"/>
+        <Res id="flightToRemoveLabel" tr="Let za uklanjanje"/>
+        <Res id="selectFlightPlaceholder" tr="Izaberi let..."/>
+        <Res id="selectFlightToRemove" tr="Prvo izaberi let iz padajuće liste."/>
+        <Res id="statusFlightRemoved" tr="Let je uklonjen."/>
+        <Res id="enteredFlights" tr="Uneseni letovi"/>
+        <Res id="filtersRanking" tr="Filteri i rangiranje putovanja"/>
+        <Res id="meetingCity" tr="Grad susreta (prazno = svi)"/>
+        <Res id="earliestDeparture" tr="Najraniji polazak"/>
+        <Res id="latestReturn" tr="Najkasniji povratak"/>
+        <Res id="minimumNights" tr="Minimalan broj noćenja"/>
+        <Res id="maximumNights" tr="Maksimalan broj noćenja"/>
+        <Res id="maximumBudget" tr="Maksimalno ukupno EUR (0 = bez limita)"/>
+        <Res id="sortBy" tr="Rangirati po"/>
+        <Res id="rankTrips" tr="Rangiraj putovanja"/>
+        <Res id="possibleTrips" tr="Moguće kombinacije (do 12 po stranici)"/>
+        <Res id="previous" tr="Prethodna"/>
+        <Res id="next" tr="Sljedeća"/>
+        <Res id="lowestTotalCost" tr="Najniži ukupni trošak"/>
+        <Res id="longestStay" tr="Najduži boravak"/>
+        <Res id="shortestStay" tr="Najkraći boravak"/>
+        <Res id="initialFlightList" tr="Uneseni letovi će se prikazati nakon klika na 'Pregled unosa'."/>
+        <Res id="initialResults" tr="Unesi filtere i pritisni 'Rangiraj putovanja'."/>
+        <Res id="validationLocations" tr="Unesi lokacije polijetanja i slijetanja."/>
+        <Res id="validationDate" tr="Unesi ispravan datum u formatu dd.mm.gggg."/>
+        <Res id="validationFare" tr="Cijena karte mora biti veća od nule."/>
+        <Res id="validationExtraCost" tr="Dodatni trošak ne može biti negativan."/>
+        <Res id="statusFlightAdded" tr="Let je dodan. Pritisni 'Pregled unosa' za prikaz liste."/>
+        <Res id="noFlights" tr="Još nema unesenih letova."/>
+        <Res id="departureUpper" tr="POLAZAK"/>
+        <Res id="returnUpper" tr="POVRATAK"/>
+        <Res id="ticketShort" tr="karta"/>
+        <Res id="additionalShort" tr="dodatno"/>
+        <Res id="noAdditionalCost" tr="bez dodatnog troška"/>
+        <Res id="nightsUnit" tr="noćenja"/>
+        <Res id="totalShort" tr="ukupno"/>
+        <Res id="ticketsShort" tr="karte"/>
+        <Res id="extraCostsShort" tr="dodaci"/>
+        <Res id="combinationsUnit" tr="kombinacija"/>
+        <Res id="noMatchingTrips" tr="Nema kombinacija koje odgovaraju filterima. Provjeri da svaki polazak i povratak koriste isti grad susreta."/>
+        <Res id="statusNoTrips" tr="Nije pronađena nijedna moguća kombinacija."/>
+        <Res id="validationNightRange" tr="Minimalan broj noćenja ne može biti veći od maksimalnog."/>
+        <Res id="validationDateRange" tr="Krajnji datum ne može biti prije najranijeg polaska."/>
+        <Res id="foundCombinations" tr="Broj pronađenih kombinacija: "/>
+        <Res id="totalIncludesAdditionalFees" tr="Ukupni trošak uključuje dodatne naknade."/>
+        <Res id="languageChanged" tr="Jezik je promijenjen."/>
+        <Res id="statusFlightsSaved" tr="Letovi su sačuvani u datoteku."/>
+        <Res id="statusFlightsLoaded" tr="Letovi su učitani iz datoteke."/>
+        <Res id="statusSaveFailed" tr="Nije moguće sačuvati letove u datoteku."/>
+        <Res id="statusLoadFailed" tr="Letove nije moguće učitati. Provjeri format datoteke."/>
+    </Translations>
+</DevRes>
