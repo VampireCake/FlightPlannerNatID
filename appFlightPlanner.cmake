@@ -71,9 +71,6 @@ if (WIN32)
     # PATH set by the VBS launcher can fail for shortcuts or direct launches.
     file(GLOB GTK_RUNTIME_DLLS "${NATID_SDK_BIN}/GTK/*.dll")
     install(FILES ${GTK_RUNTIME_DLLS} DESTINATION ".")
-    install(DIRECTORY "${NATID_SDK_BIN}/GTK/"
-        DESTINATION "GTK"
-        FILES_MATCHING PATTERN "*.dll")
     install(DIRECTORY "${NATID_SDK_BIN}/GTK/release/share/"
         DESTINATION "GTK/release/share")
     install(DIRECTORY "${NATID_SDK_ROOT}/Common/Regionals/"
