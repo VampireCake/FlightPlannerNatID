@@ -15,6 +15,8 @@ SetupIconFile=..\res\PNG-like\ikonica.ico
 OutputDir=..\installer-output
 OutputBaseFilename=FlightPlanner-Setup-{#AppVersion}
 PrivilegesRequired=admin
+ArchitecturesAllowed=x64compatible
+ArchitecturesInstallIn64BitMode=x64compatible
 Compression=lzma2/ultra64
 SolidCompression=yes
 WizardStyle=modern
@@ -26,12 +28,12 @@ Name: "desktopicon"; Description: "Create a desktop shortcut"; GroupDescription:
 
 [Files]
 Source: "{#StageDirectory}\*"; DestDir: "{app}"; Excludes: "vc_redist.x64.exe"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "{#StageDirectory}\vc_redist.x86.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
+Source: "{#StageDirectory}\vc_redist.x64.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
 
 [Icons]
 Name: "{autoprograms}\{#AppName}"; Filename: "{sys}\wscript.exe"; Parameters: """{app}\FlightPlannerNatID.vbs"""; WorkingDir: "{app}"; IconFilename: "{app}\appFlightPlanner.exe"
 Name: "{autodesktop}\{#AppName}"; Filename: "{sys}\wscript.exe"; Parameters: """{app}\FlightPlannerNatID.vbs"""; WorkingDir: "{app}"; IconFilename: "{app}\appFlightPlanner.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{tmp}\vc_redist.x86.exe"; Parameters: "/install /quiet /norestart"; StatusMsg: "Installing Microsoft Visual C++ Runtime..."; Flags: runhidden waituntilterminated
+Filename: "{tmp}\vc_redist.x64.exe"; Parameters: "/install /quiet /norestart"; StatusMsg: "Installing Microsoft Visual C++ Runtime..."; Flags: runhidden waituntilterminated
 Filename: "{sys}\wscript.exe"; Parameters: """{app}\FlightPlannerNatID.vbs"""; WorkingDir: "{app}"; Description: "Launch {#AppName}"; Flags: postinstall nowait skipifsilent

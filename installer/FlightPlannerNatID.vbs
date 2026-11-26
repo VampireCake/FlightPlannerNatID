@@ -23,4 +23,4 @@ processEnvironment("FONTCONFIG_PATH") = _
 
 commandLine = Chr(34) & appDirectory & "\appFlightPlanner.exe" & Chr(34) & _
     " -devResPath=" & Chr(34) & appDirectory & Chr(34)
-shell.Run commandLine, 0, False
+shell.Run commandLine, 1, False

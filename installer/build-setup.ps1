@@ -7,8 +7,8 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $buildDirectory = Join-Path $repoRoot 'build'
 $stageDirectory = Join-Path $buildDirectory 'stage'
 $dependencyDirectory = Join-Path $buildDirectory 'dependencies'
-$vcRedistPath = Join-Path $dependencyDirectory 'vc_redist.x86.exe'
-$vcRedistUrl = 'https://aka.ms/vc14/vc_redist.x86.exe'
+$vcRedistPath = Join-Path $dependencyDirectory 'vc_redist.x64.exe'
+$vcRedistUrl = 'https://aka.ms/vc14/vc_redist.x64.exe'
 $installerScript = Join-Path $PSScriptRoot 'FlightPlannerNatID.iss'
 
 if (-not (Get-Command cmake -ErrorAction SilentlyContinue)) {

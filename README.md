@@ -67,4 +67,4 @@ Ako SDK nije u `%USERPROFILE%\natID.SDK`, navedi njegov direktorij:
 powershell -ExecutionPolicy Bypass -File installer/build-setup.ps1 -NatIdSdkRoot "C:/putanja/do/natID.SDK"
 ```
 
-Skripta preuzima Microsoft Visual C++ x86 runtime sa zvanične Microsoft adrese i provjerava digitalni potpis prije nego što ga uključi. Staging uključuje Release DLL-ove natID/GTK, GTK runtime podatke, natID `Common` resurse, aplikacijske prevode i pokretač koji postavlja potrebne putanje. Instalacijski paket se pravi u `installer-output/FlightPlanner-Setup-0.1.0.exe`. Izlazne build datoteke i setup se ne čuvaju u izvornom kodu; setup treba dodati kao asset uz GitHub Release.
+Skripta preuzima Microsoft Visual C++ x64 runtime sa zvanične Microsoft adrese i provjerava digitalni potpis prije nego što ga uključi. Staging uključuje Release DLL-ove natID/GTK, GTK runtime podatke, natID `Common` resurse, aplikacijske prevode i pokretač koji postavlja potrebne putanje. Instalacijski paket se pravi u `installer-output/FlightPlanner-Setup-0.1.0.exe`. Izlazne build datoteke i setup se ne čuvaju u izvornom kodu; setup treba dodati kao asset uz GitHub Release.
