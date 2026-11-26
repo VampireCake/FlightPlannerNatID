@@ -66,6 +66,11 @@ if (WIN32)
             install(FILES "${NATID_BIN_DLL}" DESTINATION ".")
         endif()
     endforeach()
+    # Put GTK's top-level runtime DLLs next to the executable. Windows resolves
+    # transitive DLL imports from the executable directory; relying only on
+    # PATH set by the VBS launcher can fail for shortcuts or direct launches.
+    file(GLOB GTK_RUNTIME_DLLS "${NATID_SDK_BIN}/GTK/*.dll")
+    install(FILES ${GTK_RUNTIME_DLLS} DESTINATION ".")
     install(DIRECTORY "${NATID_SDK_BIN}/GTK/"
         DESTINATION "GTK"
         FILES_MATCHING PATTERN "*.dll")
